@@ -38,3 +38,24 @@ a {
 #nav a.button:hove {
 }
 ```
+
+```sass
+
+@mixin clearfix {
+  &::after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+}
+@mixin style-link-text($color) {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color;
+}
+nav {
+    @include clearfix;
+    @include style-link-text(blue);
+}
+
+```
