@@ -1,7 +1,7 @@
 .grid {
   &__row {
     max-width: $grid-width;
-    background-color: #eee;
+    // border: 1px solid #000;
     margin: 0 auto;
     font-size: 1.5rem;
     // every child, but less the last
@@ -14,7 +14,6 @@
     // ^ means all classes that starts with
     // * means all classes that contains that
     [class^="grid__col-"] {
-      background-color: orangered;
       float: left;
       &:not(:last-child) {
         margin-right: $gutter-horizontal;
